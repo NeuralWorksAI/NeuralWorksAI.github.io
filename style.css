@@ -1247,7 +1247,7 @@ input.main-search-input:-ms-input-placeholder {
 ======================= */
 #particles {
   width: 100%;
-  min-height: auto;
+  min-height: 900px;
   background-color: white;
   -webkit-background-size: cover;
   background-size: cover;
@@ -3528,7 +3528,7 @@ footer:before {
 /* 767 */
 @media screen and (max-width: 767px) {
   #particles {
-    padding-top: 50px;
+    min-height: 500px;
   }
   .hero-area .hero-area-content {
     top: 50%;
