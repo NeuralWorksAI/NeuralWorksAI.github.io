@@ -1,0 +1,124 @@
+/*Lato font*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap");
+$lato: "Lato", sans-serif;
+
+/*DM sans font*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+$dmsans: "DM Sans", sans-serif;
+
+/*Common colours*/
+
+/*Black and white*/
+$white: #f8faff;
+$pure-white: #ffffff;
+$neuralworks-white: #ecebe7;
+$black: #333333;
+$pure-black: #000000;
+
+/*Red*/
+$red: #ff0000;
+$fun-red: #e17a77;
+$fun-orange: #f4af78;
+
+/*Green*/
+$green: #008000;
+$fun-green: #85ec6b;
+$neon-green: #39ff14;
+
+/*Blue*/
+$blue: #0000ff;
+$facebook-blue: #4267b2;
+$twitter-blue: #1da1f2;
+$fun-blue: #729fec;
+$discord-blue-old: #7289da;
+$neuralworks-blue: #437085;
+$hestia-purple: #5900cc;
+
+/* Elements */
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $black;
+  font-family: $dmsans;
+}
+p,
+button {
+  color: $black;
+  font-family: $lato;
+}
+
+span {
+  color: $neuralworks-blue;
+}
+
+nav,
+.navbar-light {
+  height: 15vh;
+  background-color: $white;
+  a {
+    font-family: $dmsans;
+    font-size: 1.2rem;
+  }
+  /* change the color of active or hovered links */
+  .nav-item.active .nav-link,
+  .nav-item:focus .nav-link,
+  .nav-item:hover .nav-link {
+    color: $neuralworks-blue;
+  }
+}
+
+.hero {
+  height: 85vh;
+  background-color: $white;
+  .hero-box {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: $white;
+    h1 {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+/* Animations */
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
