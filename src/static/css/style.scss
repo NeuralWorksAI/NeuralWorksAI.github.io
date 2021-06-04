@@ -54,10 +54,16 @@ p,
 button {
   color: $black;
   font-family: $lato;
+  font-size: 1.25rem;
 }
 
 span {
   color: $neuralworks-blue;
+}
+
+img {
+  display: block;
+  margin: auto;
 }
 
 nav,
@@ -81,7 +87,7 @@ nav,
   background-color: $white;
   .hero-box {
     position: absolute;
-    width: 80%;
+    width: 85vw;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -93,14 +99,20 @@ nav,
   }
 }
 
+.info {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  border-radius: 100%;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
 /* Animations */
 .floating {
   animation-name: floating;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
 }
 
 @keyframes floating {
@@ -119,6 +131,6 @@ nav,
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }

@@ -27,10 +27,16 @@ p,
 button {
   color: #333333;
   font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
 }
 
 span {
   color: #437085;
+}
+
+img {
+  display: block;
+  margin: auto;
 }
 
 nav,
@@ -62,7 +68,7 @@ nav .nav-item:hover .nav-link,
 
 .hero .hero-box {
   position: absolute;
-  width: 80%;
+  width: 85vw;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -75,18 +81,24 @@ nav .nav-item:hover .nav-link,
   font-size: 4.5rem;
 }
 
+.info {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  border-radius: 100%;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
 /* Animations */
 .floating {
   -webkit-animation-name: floating;
           animation-name: floating;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
 }
 
 @-webkit-keyframes floating {
@@ -123,7 +135,7 @@ nav .nav-item:hover .nav-link,
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */
