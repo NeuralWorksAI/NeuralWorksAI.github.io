@@ -8,6 +8,10 @@ h5 {
   font-family: "DM Sans", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a:hover,
 a:focus {
   color: #437085;
