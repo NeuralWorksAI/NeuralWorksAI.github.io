@@ -20,6 +20,55 @@ button {
   font-size: 1.25rem;
 }
 
+.project-card {
+  max-width: 22rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 5vh;
+}
+
+/* Animations */
+.floating {
+  -webkit-animation-name: floating;
+  animation-name: floating;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px);
+    transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px);
+    transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+}
+
 #particles-js {
   position: absolute;
   top: 0;
