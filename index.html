@@ -47,7 +47,6 @@
   </head>
 
   <body style="max-width: 100vw">
-    <div id="particles-js"></div>
     <nav
       class="navbar navbar-light navbar-expand-md sticky-top"
       style="background: #f8faff; height: 15vh"
@@ -86,9 +85,9 @@
                 >About&nbsp;</a
               >
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Mission</a
-                ><a class="dropdown-item" href="#">Team</a
-                ><a class="dropdown-item" href="#">FAQ</a>
+                <a class="dropdown-item" href="mission.html">Mission</a
+                ><a class="dropdown-item" href="team.html">Team</a
+                ><a class="dropdown-item" href="faq.html">FAQ</a>
               </div>
             </li>
             <li class="nav-item">
@@ -104,250 +103,276 @@
         </div>
       </div>
     </nav>
-    <div
-      class="col"
-      id="custom-col"
-      style="background-color: #f8faff; height: 95vh"
-    >
+    <div class="main">
+      <div id="particles-js"></div>
+      <div
+        class="col"
+        id="custom-col"
+        style="background-color: #f8faff; height: 95vh"
+      >
+        <div
+          class="container-fluid py-5"
+          style="
+            text-align: center;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%);
+          "
+        >
+          <h1 class="display-5 fw-bold" id="hero" style="font-size: 10vw">
+            Create a better<br />&nbsp;universe.
+          </h1>
+          <a
+            class="btn btn-primary btn-lg"
+            role="button"
+            id="start-button"
+            href="https://discord.gg/UQBybs4X8H"
+            style="font-size: 1rem"
+            target="_blank"
+            >Start Here</a
+          >
+        </div>
+      </div>
       <div
         class="container-fluid py-5"
+        id="about-container"
+        style="text-align: center"
+      >
+        <h1 class="display-5 fw-bold">
+          So, what is&nbsp;<span>NeuralWorks</span>?
+        </h1>
+        <p
+          id="about-paragrah"
+          style="
+            max-width: 60%;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+            margin: auto;
+          "
+        >
+          NeuralWorks is a student ran community of aspiring entrepreneurs and
+          creators. Meet&nbsp;<span>new friends</span>&nbsp;and make projects
+          with some of the&nbsp;<span>best creators in the world</span>!
+        </p>
+      </div>
+      <div
+        class="container"
+        id="grid-container"
+        style="
+          padding-top: 5rem;
+          background-image: url(assets/img/background.jpg);
+          background-size: cover;
+          border-radius: 100%;
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+        "
+      >
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Empower Your Learning</h3>
+                <p class="card-text">
+                  Surround yourself in an environment of&nbsp;<span
+                    >like minded people</span
+                  >. Our members include students and professional
+                  developers,&nbsp;<span>spanning 6 continents</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <img
+              id="custom-image"
+              class="d-flex flex-wrap align-items-center floating"
+              src="assets/img/group.svg"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex flex-wrap align-items-center floating">
+            <img id="custom-image" src="assets/img/work.svg" />
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Award Winning Projects</h3>
+                <p class="card-text">
+                  Work with the NeuralWorks team to create new and exciting
+                  projects. Previous projects have&nbsp;<span
+                    >won ivy league hackathons</span
+                  >&nbsp;and been funded.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container"
+        id="mobile-grid-container"
+        style="padding-top: 5rem; text-align: center"
+      >
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Empower Your Learning</h3>
+                <p class="card-text">
+                  Surround yourself in an environment of&nbsp;<span
+                    >like minded people</span
+                  >. Our members include students and professional
+                  developers,&nbsp;<span>spanning 6 continents</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img
+              id="custom-image"
+              class="floating"
+              src="assets/img/group.svg"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Award Winning Projects</h3>
+                <p class="card-text">
+                  Work with the NeuralWorks team to create new exciting
+                  projects. Previous projects have&nbsp;<span
+                    >won ivy league hackathons</span
+                  >&nbsp;and been funded.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img id="custom-image" src="assets/img/work.svg" class="floating" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid py-5"
+        id="about-container"
+        style="text-align: center"
+      >
+        <h1 class="display-5 fw-bold" style="margin-top: 5rem; padding: 1rem">
+          Recent Projects
+        </h1>
+        <div class="card-group">
+          <div class="card project-card" data-aos="fade-up">
+            <img
+              class="card-img-top w-100 d-block"
+              src="https://media.giphy.com/media/BIQIObEIZv7WkPVqt4/giphy.gif"
+              class="card-img-top"
+              alt="Commit"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Commit</h4>
+              <p class="card-text">
+                RU hacks winner. Solving procrastination the right way,
+                permanently!
+              </p>
+              <a
+                href="https://devpost.com/software/commit-f9nmdz"
+                target="_blank"
+              >
+                <button class="btn btn-primary" type="button">
+                  See more
+                </button></a
+              >
+            </div>
+          </div>
+          <div
+            class="card project-card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              class="card-img-top w-100 d-block"
+              src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/487/158/datas/medium.png"
+              class="card-img-top"
+              alt="Photocrypt"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Photocrypt</h4>
+              <p class="card-text">
+                Hack Caltech Winner, 1517 Funding Winner. Secure accounts with
+                images, not passwords.
+              </p>
+              <a
+                href="https://devpost.com/software/photocrypt-70prqs"
+                target="_blank"
+              >
+                <button class="btn btn-primary" type="button">See more</button>
+              </a>
+            </div>
+          </div>
+          <div
+            class="card project-card"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <img
+              class="card-img-top w-100 d-block"
+              src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/410/418/datas/original.png"
+              alt="Photocrypt"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Lottocoin</h4>
+              <p class="card-text">
+                A cryptocurrency created to solve the biggest problem in
+                FinTech.<br />
+              </p>
+              <a
+                href="https://devpost.com/software/lottocoin-5n7fsx"
+                target="_blank"
+              >
+                <button class="btn btn-primary" type="button">
+                  See more
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1
+        class="display-5 fw-bold"
         style="
           text-align: center;
-          position: absolute;
-          top: 25%;
-          left: 50%;
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%);
+          padding: 5vh;
+          margin-top: 5rem;
+          font-size: 6vh;
         "
       >
-        <h1 class="display-5 fw-bold" id="hero" style="font-size: 10vw">
-          Create a better<br />&nbsp;universe.
-        </h1>
-        <a
-          class="btn btn-primary btn-lg"
-          role="button"
-          id="start-button"
-          href="https://discord.gg/UQBybs4X8H"
-          style="font-size: 1rem"
-          target="_blank"
-          >Start Here</a
+        Any Questions?<br />&nbsp;<a
+          href="mailto:michaelwbeer@gmail.com"
+          style="text-decoration: none; color: #437085"
+          >Email Us</a
         >
-      </div>
-    </div>
-    <div
-      class="container-fluid py-5"
-      id="about-container"
-      style="text-align: center"
-    >
-      <h1 class="display-5 fw-bold">
-        So, what is&nbsp;<span>NeuralWorks</span>?
       </h1>
-      <p
-        id="about-paragrah"
-        style="
-          max-width: 60%;
-          padding-top: 3rem;
-          padding-bottom: 5rem;
-          margin: auto;
-        "
-      >
-        NeuralWorks is a student ran community of aspiring entrepreneurs and
-        creators. Meet&nbsp;<span>new friends</span>&nbsp;and make projects with
-        some of the&nbsp;<span>best creators in the world</span>!
-      </p>
+      <footer class="footer-basic">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Home</a></li>
+          <li class="list-inline-item">
+            <a href="https://github.com/NeuralWorksAI">Projects</a>
+          </li>
+          <li class="list-inline-item"><a href="mission.html">Mission</a></li>
+          <li class="list-inline-item"><a href="team.html">Team</a></li>
+          <li class="list-inline-item"><a href="faq.html">FAQ</a></li>
+        </ul>
+        <p class="copyright">NeuralWorks © 2020</p>
+      </footer>
     </div>
-    <div
-      class="container"
-      id="grid-container"
-      style="
-        padding-top: 5rem;
-        background-image: url(assets/img/background.jpg);
-        background-size: cover;
-        border-radius: 100%;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-      "
-    >
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Empower Your Learning</h3>
-              <p class="card-text">
-                Surround yourself in an environment of&nbsp;<span
-                  >like minded people</span
-                >. Our members include students and professional
-                developers,&nbsp;<span>spanning 6 continents</span>.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <img
-            id="custom-image"
-            class="d-flex flex-wrap align-items-center floating"
-            src="assets/img/group.svg"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col d-flex flex-wrap align-items-center floating">
-          <img id="custom-image" src="assets/img/work.svg" />
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Award Winning Projects</h3>
-              <p class="card-text">
-                Work with the NeuralWorks team to create new and exciting
-                projects. Previous projects have&nbsp;<span
-                  >won ivy league hackathons</span
-                >&nbsp;and been funded.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="container"
-      id="mobile-grid-container"
-      style="padding-top: 5rem; text-align: center"
-    >
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Empower Your Learning</h3>
-              <p class="card-text">
-                Surround yourself in an environment of&nbsp;<span
-                  >like minded people</span
-                >. Our members include students and professional
-                developers,&nbsp;<span>spanning 6 continents</span>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img id="custom-image" class="floating" src="assets/img/group.svg" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Award Winning Projects</h3>
-              <p class="card-text">
-                Work with the NeuralWorks team to create new exciting projects.
-                Previous projects have&nbsp;<span
-                  >won ivy league hackathons</span
-                >&nbsp;and been funded.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img id="custom-image" src="assets/img/work.svg" class="floating" />
-        </div>
-      </div>
-    </div>
-    <div
-      class="container-fluid py-5"
-      id="about-container"
-      style="text-align: center"
-    >
-      <h1 class="display-5 fw-bold" style="margin-top: 5rem; padding: 1rem">
-        Recent Projects
-      </h1>
-      <div class="card-group">
-        <div class="card project-card" data-aos="fade-up">
-          <img
-            class="card-img-top w-100 d-block"
-            src="https://media.giphy.com/media/BIQIObEIZv7WkPVqt4/giphy.gif"
-            class="card-img-top"
-            alt="Commit"
-          />
-          <div class="card-body">
-            <h4 class="card-title">Commit</h4>
-            <p class="card-text">
-              RU hacks winner. Solving procrastination the right way,
-              permanently!
-            </p>
-            <a
-              href="https://devpost.com/software/commit-f9nmdz"
-              target="_blank"
-            >
-              <button class="btn btn-primary" type="button">See more</button></a
-            >
-          </div>
-        </div>
-        <div class="card project-card" data-aos="fade-up" data-aos-delay="300">
-          <img
-            class="card-img-top w-100 d-block"
-            src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/487/158/datas/medium.png"
-            class="card-img-top"
-            alt="Photocrypt"
-          />
-          <div class="card-body">
-            <h4 class="card-title">Photocrypt</h4>
-            <p class="card-text">
-              Hack Caltech Winner, 1517 Funding Winner. Secure accounts with
-              images, not passwords.
-            </p>
-            <a
-              href="https://devpost.com/software/photocrypt-70prqs"
-              target="_blank"
-            >
-              <button class="btn btn-primary" type="button">See more</button>
-            </a>
-          </div>
-        </div>
-        <div class="card project-card" data-aos="fade-up" data-aos-delay="600">
-          <img
-            class="card-img-top w-100 d-block"
-            src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/410/418/datas/original.png"
-            alt="Photocrypt"
-          />
-          <div class="card-body">
-            <h4 class="card-title">Lottocoin</h4>
-            <p class="card-text">
-              A cryptocurrency created to solve the biggest problem in
-              FinTech.<br />
-            </p>
-            <a
-              href="https://devpost.com/software/lottocoin-5n7fsx"
-              target="_blank"
-            >
-              <button class="btn btn-primary" type="button">See more</button></a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <h1
-      class="display-5 fw-bold"
-      style="text-align: center; padding: 5vh; margin-top: 5rem; font-size: 6vh"
-    >
-      Any Questions?<br />&nbsp;<a
-        href="mailto:michaelwbeer@gmail.com"
-        style="text-decoration: none; color: #437085"
-        >Email Us</a
-      >
-    </h1>
-    <footer class="footer-basic">
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Home</a></li>
-        <li class="list-inline-item"><a href="#">Projects</a></li>
-        <li class="list-inline-item"><a href="#">Mission</a></li>
-        <li class="list-inline-item"><a href="#">Team</a></li>
-        <li class="list-inline-item"><a href="#">FAQ</a></li>
-      </ul>
-      <p class="copyright">NeuralWorks © 2020</p>
-    </footer>
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
